@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uploaded Image</h1>
+    <img src="{{ url_for('get_uploaded_image', filename=filename) }}" alt="Uploaded Image">
+    <br>
+    <a href="./upload.html">Upload a New Image</a> <!-- Link to the upload page -->
+    <a href="all_images.html">View All Images</a> <!-- Link to the "All Images" page -->
+</body>
+</html>
